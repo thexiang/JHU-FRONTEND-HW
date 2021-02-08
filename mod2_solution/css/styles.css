@@ -1,0 +1,191 @@
+/* Basic setup */
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.desktop-heading-1 {
+  display: none;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mobile-heading-1 {
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
+
+.col-content {
+  position: relative;
+  border: 1px solid black;
+  background-color: lightgray;
+  width: 90%;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+  margin-bottom: 2%;
+  overflow: scroll;
+}
+
+.col-content:hover {
+  cursor: s-resize;
+}
+
+.col-content p {
+  margin-top: 4rem;
+}
+
+.menu-title {
+  position: absolute;
+  border: 1px solid black;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Colors */
+.bg-pink {
+  background-color: #d59898;
+}
+
+.bg-red {
+  background-color: #c14543;
+}
+
+.bg-yellow {
+  background-color: #e5d198;
+}
+
+/* text */
+
+.text-white {
+  color: white;
+}
+
+/* Responsive Setup */
+.row {
+  width: 100%;
+}
+
+/******************** Tablet 768px ~ 991px  ********************/
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .desktop-heading-1 {
+    display: block;
+  }
+
+  .mobile-heading-1 {
+    display: none;
+  }
+
+  .menu-title {
+    width: 150px;
+  }
+
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+  }
+
+  .col-md-1 {
+      width: 8.33%;
+  }
+  .col-md-2 {
+      width: 16.66%;
+  }
+  .col-md-3 {
+      width: 25%;
+  }
+  .col-md-4 {
+      width: 33.33%;
+  }
+  .col-md-5 {
+      width: 41.66%;
+  }
+  .col-md-6 {
+      width: 50%;
+  }
+  .col-md-7 {
+      width: 58.33%;
+  }
+  .col-md-8 {
+      width: 66.66%;
+  }
+  .col-md-9 {
+      width: 74.99%;
+  }
+  .col-md-10 {
+      width: 83.33%;
+  }
+  .col-md-11 {
+      width: 91.66%;
+  }
+  .col-md-12 {
+      width: 100%;
+  }
+
+  .col:last-child .col-content {
+    width: 95%;
+  }
+}
+
+/******************** Desktop > 992px ********************/
+@media (min-width: 992px) {
+  .desktop-heading-1 {
+    display: block;
+  }
+
+  .mobile-heading-1 {
+    display: none;
+  }
+
+  .menu-title {
+    width: 250px;
+  }
+
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, 
+  .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
