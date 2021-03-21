@@ -78,13 +78,6 @@
             return boughtItems;
           };
         
-        service.isToBuyListEmpty = function () {
-            return toBuyItems.length === 0;
-        };   
-
-        service.isBoughtListEmpty = function () {
-            return boughtItems.length === 0;
-        };   
       }
 
 
